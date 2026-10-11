@@ -18,6 +18,9 @@ namespace net_lab1_2
         {
             InitializeComponent();
 
+            одновимірніМасивиToolStripMenuItem.Click += new System.EventHandler(this.одновимірніМасивиToolStripMenuItem_Click);
+            двовимірніМасивиToolStripMenuItem.Click += new System.EventHandler(this.двовимірніМасивиToolStripMenuItem_Click);
+
             tab = new Tab();
 
             label1.Text = "Xn";
@@ -67,9 +70,18 @@ namespace net_lab1_2
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void одновимірніМасивиToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Form2 f = new Form2();
+            f.Show();
+            this.Hide();
+        }
 
+        private void двовимірніМасивиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form3 f = new Form3();
+            f.Show();
+            this.Hide();
         }
     }
 }
