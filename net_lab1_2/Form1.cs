@@ -83,5 +83,12 @@ namespace net_lab1_2
             f.Show();
             this.Hide();
         }
+
+        private void unitTestsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 f = new Form4();
+            f.Show();
+            this.Hide();
+        }
     }
 }

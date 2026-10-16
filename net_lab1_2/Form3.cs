@@ -60,7 +60,21 @@ namespace net_lab1_2
                 }
             }
 
+            double minValue = 999999;
+
+            for (int i = 0; i < arr.Rows; i++)
+            {
+                for (int j = 0; j < arr.Cols; j++)
+                {
+                    if (arr[i, j] < minValue)
+                    {
+                        minValue = arr[i, j];
+                    }
+                }
+            }
+
             label3.Text = "Добуток: " + product.ToString();
+            label4.Text = "Мінімальне значення: " + minValue.ToString();
         }
     }
 }
